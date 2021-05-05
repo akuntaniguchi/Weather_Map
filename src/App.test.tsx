@@ -1,9 +1,23 @@
-import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+/*
+  Writing Unit Tests - The Three As
+  Arrange -> Set up the test data, test conditions and test environment
+  Act -> Run logic that should be tested
+  Assert -> Compare execution results with expected results
+*/
+
+describe('App Component', () => {
+  test('renders Zip Code as a text', () => {
+    // Arrange
+    render(<App />);
+    
+    // Act
+    // ... Nothing
+  
+    // Assert
+    const locationElement = screen.getByText('Zip Code');
+    expect(locationElement).toBeInTheDocument();
+  });
 });
