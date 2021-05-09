@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
+import getTemperature from '../utilities/OpenWeather';
 
 type LocationInputProps = {
-  onAddLocation: (location: string) => void;
+  onAddTemperature: (temperature: string) => void;
 }
 
 const LocationInput: React.FC<LocationInputProps> = (props) => {
@@ -11,7 +12,11 @@ const LocationInput: React.FC<LocationInputProps> = (props) => {
     // Prevent request to server serving this app
     event.preventDefault();
     const locationInput = locationInputRef.current!.value
-    props.onAddLocation(locationInput)
+
+    // Retrieve and set the temperature
+    getTemperature(locationInput).then(temperature => {
+      props.onAddTemperature(temperature)
+    })
   };
 
   return  (
