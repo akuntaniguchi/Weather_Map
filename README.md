@@ -1,4 +1,26 @@
-# Getting Started with Create React App
+# Weather Map 
+
+React-Typescript application that changes the background based on the temperature of requested location.
+
+## Setup
+
+### Prerequisites
+
+This project requires the the following tools to be installed before it can be sucessfully built.
+
+| Dependancy | Version    |
+|------------|------------|
+| Node       | ~> 14.6.0  |
+| NPM        | >= 6.14.11 |
+
+### Environment Variables
+- `Set the REACT_APP_OPENWEATHER_API_KEY variable in the .env.template file`
+
+### Install
+- `npm install`
+
+
+# Create React App README
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
