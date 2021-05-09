@@ -8,7 +8,7 @@ React-Typescript application that changes the background based on the temperatur
 
 This project requires the the following tools to be installed before it can be sucessfully built.
 
-| Dependancy | Version    |
+| Dependency | Version    |
 |------------|------------|
 | Node       | ~> 14.6.0  |
 | NPM        | >= 6.14.11 |
