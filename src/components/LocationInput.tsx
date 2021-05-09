@@ -15,14 +15,19 @@ const LocationInput: React.FC<LocationInputProps> = (props) => {
   };
 
   return  (
-    <form onSubmit={locationSubmitHandler}>
-      <div>
-        {/* TODO: Type of input may change */}
-        <label>Zip Code</label>
-        <input type='text' id='location' ref={locationInputRef}></input>
-      </div>
-      <button type='submit'>Submit</button>
-    </form>
+    <div className="ui text container">
+      <form className="ui form" onSubmit={locationSubmitHandler}>
+        <div className="fields">
+          <label className="ui header">Enter a Zip Code:</label>
+        </div>
+        <div className="fields">
+          <input className="ui input" placeholder="Zip Code..." type='text' id='location' ref={locationInputRef}></input>
+        </div>
+        <div>
+          <button className="ui primary button" type='submit'>Submit</button>
+        </div>
+      </form>
+    </div>
   );
 };
 

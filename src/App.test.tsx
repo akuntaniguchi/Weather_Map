@@ -9,7 +9,7 @@ import App from './App';
 */
 
 describe('App Component', () => {
-  test('renders Zip Code as a text', () => {
+  test('renders Enter a Zip Code: as a text', () => {
     // Arrange
     render(<App />);
     
@@ -17,7 +17,7 @@ describe('App Component', () => {
     // ... Nothing
   
     // Assert
-    const locationElement = screen.getByText('Zip Code');
+    const locationElement = screen.getByText('Enter a Zip Code:');
     expect(locationElement).toBeInTheDocument();
   });
 });
