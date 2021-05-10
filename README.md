@@ -14,7 +14,7 @@ This project requires the the following tools to be installed before it can be s
 | NPM        | >= 6.14.11 |
 
 ### Environment Variables
-- `Set the REACT_APP_OPENWEATHER_API_KEY variable in the .env.template file`
+- `Set the REACT_APP_OPENWEATHER_API_KEY variable in a .env file (View .env.template)`
 
 ### Install
 - `npm install`

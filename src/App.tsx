@@ -4,20 +4,19 @@ import 'semantic-ui-css/semantic.min.css';
 import './App.css';
 
 const App: React.FC = () => {
-  // Location state value (Ex. Zip Code)
-  const [location, setLocation] = useState("")
+  // State
+  const [temperature, setTemperature] = useState('')
 
-  // Function to set the location state value
-  const locationAddHandler = (location: string) => {
-    setLocation(location)
-  };
+  // Function to set the temperature state value
+  const temperatureAddHandler = (temperature: string) => {
+    setTemperature(temperature)
+  }
 
-  // TODO: Function to use location value and retrieve temperature
   // TODO: Function to change background based on temperature value
 
   return (
     <div className="App">
-      <LocationInput onAddLocation={locationAddHandler}/>
+      <LocationInput onAddTemperature={temperatureAddHandler}/>
     </div>
   );
 };
